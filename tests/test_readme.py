@@ -3,7 +3,7 @@
 from pathlib import Path
 
 from cpcskill.claims import scan_text
-from cpcskill.config import CONSOLE_URL, PRECIP_GIST, QUESTION, TEMP_GIST
+from cpcskill.config import INDEX_GIST, PRECIP_GIST, QUESTION, TEMP_GIST
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -22,9 +22,10 @@ def test_readme_opens_with_the_question() -> None:
     assert "USW00014827" in text
     assert "USW00093819" in text
     assert "USW00093817" in text
-    assert "Open_the_research_console-2e7d32" in text
+    assert "Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3" in text
+    assert "Open_the_research_console" not in text
     assert "labelColor" not in text
-    assert CONSOLE_URL in text
+    assert INDEX_GIST in text
     assert TEMP_GIST.split("/")[-1] in text
     assert PRECIP_GIST.split("/")[-1] in text
     assert ".github/blob/main/RESEARCH.md" not in text
