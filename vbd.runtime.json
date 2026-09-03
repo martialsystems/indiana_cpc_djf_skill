@@ -1,0 +1,22 @@
+{
+  "runtime_checks": [
+    {
+      "id": "unit-tests",
+      "argv": [".venv/bin/python", "-m", "pytest", "tests/", "-q"],
+      "timeout_s": 180,
+      "paths": ["src/**", "tests/**", "scripts/**", "cpcforge/**", "requirements.txt", "vbd.runtime.json"]
+    },
+    {
+      "id": "fixture-path",
+      "argv": [".venv/bin/python", "scripts/run_fixture.py", "logs/stage0_fixture"],
+      "timeout_s": 120,
+      "paths": ["src/**", "scripts/**", "tests/**"]
+    },
+    {
+      "id": "cpcforge-sanity",
+      "argv": [".venv/bin/python", "cpcforge/scripts/sanity_cpcforge.py"],
+      "timeout_s": 60,
+      "paths": ["cpcforge/**", "tests/test_cpcforge_laws.py"]
+    }
+  ]
+}

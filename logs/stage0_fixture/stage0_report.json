@@ -1,0 +1,1139 @@
+{
+  "stage": "0",
+  "fixture": true,
+  "question": "Do issued CPC DJF temperature and precipitation outlooks beat climatology at South Bend, Fort Wayne, Indianapolis, and Evansville?",
+  "source": "fixture",
+  "n_rows": 140,
+  "n_stations": 4,
+  "units": {
+    "tavg": "C",
+    "prcp": "in",
+    "skill": "brier/hit/heidke"
+  },
+  "element": "TAVG+PRCP",
+  "contestant": "cpc",
+  "ridge": false,
+  "p_sfha_feature": false,
+  "hand_feature": false,
+  "nora_q": false,
+  "nwm_file": false,
+  "live_lead4": false,
+  "outlook_hero_rewritten": false,
+  "tavg_beats_ec": true,
+  "prcp_beats_ec": true,
+  "t_and_p_averaged": false,
+  "figures": [
+    "skill_bars.png",
+    "north_south.png"
+  ],
+  "n_kept": 140,
+  "n_dropped_incomplete": 1,
+  "n_train": 112,
+  "n_holdout": 24,
+  "n_confirm": 4,
+  "holdout": {
+    "tavg": {
+      "n": 24,
+      "cpc": {
+        "brier": 0.41,
+        "hit": 0.75,
+        "heidke": 0.625,
+        "n_non_ec": 24,
+        "hit_non_ec": 0.75,
+        "heidke_non_ec": 0.625,
+        "coverage_non_ec": 1.0
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 0.25,
+        "hit": 0.875,
+        "n": 24
+      },
+      "beats_ec": true
+    },
+    "prcp": {
+      "n": 24,
+      "cpc": {
+        "brier": 0.4752083333333333,
+        "hit": 0.7083333333333334,
+        "heidke": 0.5625,
+        "n_non_ec": 21,
+        "hit_non_ec": 0.7619047619047619,
+        "heidke_non_ec": 0.6428571428571428,
+        "coverage_non_ec": 0.875
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 0.25,
+        "hit": 0.875,
+        "n": 24
+      },
+      "beats_ec": true
+    }
+  },
+  "confirm": {
+    "tavg": {
+      "n": 4,
+      "cpc": {
+        "brier": 0.6666666666666667,
+        "hit": 0.25,
+        "heidke": -0.12499999999999996,
+        "n_non_ec": 0,
+        "hit_non_ec": null,
+        "heidke_non_ec": null,
+        "coverage_non_ec": 0.0
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 1.0,
+        "hit": 0.5,
+        "n": 4
+      },
+      "beats_ec": false
+    },
+    "prcp": {
+      "n": 4,
+      "cpc": {
+        "brier": 0.6666666666666667,
+        "hit": 0.25,
+        "heidke": -0.12499999999999996,
+        "n_non_ec": 0,
+        "hit_non_ec": null,
+        "heidke_non_ec": null,
+        "coverage_non_ec": 0.0
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 1.0,
+        "hit": 0.5,
+        "n": 4
+      },
+      "beats_ec": false
+    }
+  },
+  "holdout_north": {
+    "tavg": {
+      "n": 12,
+      "cpc": {
+        "brier": 0.26,
+        "hit": 0.9166666666666666,
+        "heidke": 0.8749999999999998,
+        "n_non_ec": 12,
+        "hit_non_ec": 0.9166666666666666,
+        "heidke_non_ec": 0.8749999999999998,
+        "coverage_non_ec": 1.0
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 0.16666666666666666,
+        "hit": 0.9166666666666666,
+        "n": 12
+      },
+      "beats_ec": true
+    },
+    "prcp": {
+      "n": 12,
+      "cpc": {
+        "brier": 0.3549999999999999,
+        "hit": 0.9166666666666666,
+        "heidke": 0.8749999999999998,
+        "n_non_ec": 12,
+        "hit_non_ec": 0.9166666666666666,
+        "heidke_non_ec": 0.8749999999999998,
+        "coverage_non_ec": 1.0
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 0.16666666666666666,
+        "hit": 0.9166666666666666,
+        "n": 12
+      },
+      "beats_ec": true
+    }
+  },
+  "holdout_south": {
+    "tavg": {
+      "n": 12,
+      "cpc": {
+        "brier": 0.5599999999999999,
+        "hit": 0.5833333333333334,
+        "heidke": 0.37500000000000006,
+        "n_non_ec": 12,
+        "hit_non_ec": 0.5833333333333334,
+        "heidke_non_ec": 0.37500000000000006,
+        "coverage_non_ec": 1.0
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 0.3333333333333333,
+        "hit": 0.8333333333333334,
+        "n": 12
+      },
+      "beats_ec": true
+    },
+    "prcp": {
+      "n": 12,
+      "cpc": {
+        "brier": 0.5954166666666666,
+        "hit": 0.5,
+        "heidke": 0.25,
+        "n_non_ec": 9,
+        "hit_non_ec": 0.5555555555555556,
+        "heidke_non_ec": 0.33333333333333337,
+        "coverage_non_ec": 0.75
+      },
+      "ec": {
+        "brier": 0.6666666666666667,
+        "hit": 0.3333333333333333
+      },
+      "last_year": {
+        "brier": 0.3333333333333333,
+        "hit": 0.8333333333333334,
+        "n": 12
+      },
+      "beats_ec": true
+    }
+  },
+  "by_station": {
+    "USW00014848": {
+      "name": "South Bend",
+      "tavg": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.335,
+          "hit": 0.8333333333333334,
+          "heidke": 0.7499999999999999,
+          "n_non_ec": 6,
+          "hit_non_ec": 0.8333333333333334,
+          "heidke_non_ec": 0.7499999999999999,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.3333333333333333,
+          "hit": 0.8333333333333334,
+          "n": 6
+        },
+        "beats_ec": true
+      },
+      "prcp": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.40499999999999997,
+          "hit": 0.8333333333333334,
+          "heidke": 0.7499999999999999,
+          "n_non_ec": 6,
+          "hit_non_ec": 0.8333333333333334,
+          "heidke_non_ec": 0.7499999999999999,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.3333333333333333,
+          "hit": 0.8333333333333334,
+          "n": 6
+        },
+        "beats_ec": true
+      }
+    },
+    "USW00014827": {
+      "name": "Fort Wayne",
+      "tavg": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.18499999999999997,
+          "hit": 1.0,
+          "heidke": 1.0,
+          "n_non_ec": 6,
+          "hit_non_ec": 1.0,
+          "heidke_non_ec": 1.0,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.0,
+          "hit": 1.0,
+          "n": 6
+        },
+        "beats_ec": true
+      },
+      "prcp": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.30499999999999994,
+          "hit": 1.0,
+          "heidke": 1.0,
+          "n_non_ec": 6,
+          "hit_non_ec": 1.0,
+          "heidke_non_ec": 1.0,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.0,
+          "hit": 1.0,
+          "n": 6
+        },
+        "beats_ec": true
+      }
+    },
+    "USW00093819": {
+      "name": "Indianapolis",
+      "tavg": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.6350000000000001,
+          "hit": 0.5,
+          "heidke": 0.25,
+          "n_non_ec": 6,
+          "hit_non_ec": 0.5,
+          "heidke_non_ec": 0.25,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.3333333333333333,
+          "hit": 0.8333333333333334,
+          "n": 6
+        },
+        "beats_ec": true
+      },
+      "prcp": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.7050000000000001,
+          "hit": 0.3333333333333333,
+          "heidke": 0.0,
+          "n_non_ec": 6,
+          "hit_non_ec": 0.3333333333333333,
+          "heidke_non_ec": 0.0,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.3333333333333333,
+          "hit": 0.8333333333333334,
+          "n": 6
+        },
+        "beats_ec": false
+      }
+    },
+    "USW00093817": {
+      "name": "Evansville",
+      "tavg": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.4850000000000001,
+          "hit": 0.6666666666666666,
+          "heidke": 0.49999999999999994,
+          "n_non_ec": 6,
+          "hit_non_ec": 0.6666666666666666,
+          "heidke_non_ec": 0.49999999999999994,
+          "coverage_non_ec": 1.0
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.3333333333333333,
+          "hit": 0.8333333333333334,
+          "n": 6
+        },
+        "beats_ec": true
+      },
+      "prcp": {
+        "n": 6,
+        "cpc": {
+          "brier": 0.48583333333333334,
+          "hit": 0.6666666666666666,
+          "heidke": 0.49999999999999994,
+          "n_non_ec": 3,
+          "hit_non_ec": 1.0,
+          "heidke_non_ec": 1.0,
+          "coverage_non_ec": 0.5
+        },
+        "ec": {
+          "brier": 0.6666666666666667,
+          "hit": 0.3333333333333333
+        },
+        "last_year": {
+          "brier": 0.3333333333333333,
+          "hit": 0.8333333333333334,
+          "n": 6
+        },
+        "beats_ec": true
+      }
+    }
+  },
+  "holdout_rows": [
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2020,
+      "role": "holdout",
+      "tavg_c": -1.7360258913581645,
+      "prcp_in": 6.498718454385863,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 1,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2021,
+      "role": "holdout",
+      "tavg_c": -2.502831930642525,
+      "prcp_in": 4.906720457277606,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2022,
+      "role": "holdout",
+      "tavg_c": -3.6015925411096683,
+      "prcp_in": 3.731254041134838,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2023,
+      "role": "holdout",
+      "tavg_c": -4.346758584985798,
+      "prcp_in": 2.6080959655370752,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2024,
+      "role": "holdout",
+      "tavg_c": -4.926082509989724,
+      "prcp_in": 2.175177778086669,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2025,
+      "role": "holdout",
+      "tavg_c": -4.865156038837049,
+      "prcp_in": 2.2290835752880125,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2020,
+      "role": "holdout",
+      "tavg_c": -2.1851339029429946,
+      "prcp_in": 4.5148565754033365,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2021,
+      "role": "holdout",
+      "tavg_c": -2.60110174182041,
+      "prcp_in": 3.8657646731804216,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2022,
+      "role": "holdout",
+      "tavg_c": -2.626795174584009,
+      "prcp_in": 3.6558373906656785,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2023,
+      "role": "holdout",
+      "tavg_c": -2.310856199908734,
+      "prcp_in": 3.418634503879763,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2024,
+      "role": "holdout",
+      "tavg_c": -1.662056226276002,
+      "prcp_in": 4.655770046158163,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2025,
+      "role": "holdout",
+      "tavg_c": -1.1195894899013359,
+      "prcp_in": 5.2989250735637965,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2020,
+      "role": "holdout",
+      "tavg_c": 0.2941787868532933,
+      "prcp_in": 5.410278186587355,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2021,
+      "role": "holdout",
+      "tavg_c": 0.5822288136910598,
+      "prcp_in": 6.170423211586584,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2022,
+      "role": "holdout",
+      "tavg_c": 1.203292287255839,
+      "prcp_in": 7.026052943396991,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 1,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2023,
+      "role": "holdout",
+      "tavg_c": 2.3812885141511093,
+      "prcp_in": 8.250988759100228,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.55,
+        0.25,
+        0.2
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 1,
+      "ly_tavg": 0,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2024,
+      "role": "holdout",
+      "tavg_c": 3.582235202704229,
+      "prcp_in": 9.697401036862022,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 1,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2025,
+      "role": "holdout",
+      "tavg_c": 4.088724574401524,
+      "prcp_in": 10.342933831252992,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 1,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2020,
+      "role": "holdout",
+      "tavg_c": 4.704561640597622,
+      "prcp_in": 9.795034071575424,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.65,
+        0.2,
+        0.15
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 1,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2021,
+      "role": "holdout",
+      "tavg_c": 5.6097263333811,
+      "prcp_in": 10.872987746931173,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 2,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2022,
+      "role": "holdout",
+      "tavg_c": 6.759397367536232,
+      "prcp_in": 11.915739037177737,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 2,
+      "obs_prcp": 2,
+      "ly_tavg": 1,
+      "ly_prcp": 2
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2023,
+      "role": "holdout",
+      "tavg_c": 7.8401503503096395,
+      "prcp_in": 13.567887491760136,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "obs_tavg": 2,
+      "obs_prcp": 2,
+      "ly_tavg": 2,
+      "ly_prcp": 2
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2024,
+      "role": "holdout",
+      "tavg_c": 8.104487263304879,
+      "prcp_in": 14.219710669841225,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 2,
+      "obs_prcp": 2,
+      "ly_tavg": 2,
+      "ly_prcp": 2
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2025,
+      "role": "holdout",
+      "tavg_c": 8.528623477535143,
+      "prcp_in": 13.93971753011043,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "p_prcp": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "obs_tavg": 2,
+      "obs_prcp": 2,
+      "ly_tavg": 2,
+      "ly_prcp": 2
+    }
+  ],
+  "confirm_rows": [
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "winter_id": 2026,
+      "role": "confirm",
+      "tavg_c": -5.029028049919092,
+      "prcp_in": 2.067073018740651,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 0,
+      "obs_prcp": 0,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "winter_id": 2026,
+      "role": "confirm",
+      "tavg_c": -0.21678134259909965,
+      "prcp_in": 6.381234471839578,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 1,
+      "obs_prcp": 1,
+      "ly_tavg": 0,
+      "ly_prcp": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "winter_id": 2026,
+      "role": "confirm",
+      "tavg_c": 5.204387962589237,
+      "prcp_in": 11.57280365513304,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 2,
+      "obs_prcp": 2,
+      "ly_tavg": 1,
+      "ly_prcp": 1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "winter_id": 2026,
+      "role": "confirm",
+      "tavg_c": 8.480022685901448,
+      "prcp_in": 14.411015161979762,
+      "tavg_frac": 0.95,
+      "prcp_frac": 0.95,
+      "p_tavg": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "p_prcp": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "obs_tavg": 2,
+      "obs_prcp": 2,
+      "ly_tavg": 2,
+      "ly_prcp": 2
+    }
+  ],
+  "cuts": {
+    "USW00014848": {
+      "tavg": {
+        "lo": -1.9998154769963774,
+        "hi": 0.07383107965490511
+      },
+      "prcp": {
+        "lo": 6.059749107501694,
+        "hi": 8.865542777186283
+      }
+    },
+    "USW00014827": {
+      "tavg": {
+        "lo": -0.23640179297260153,
+        "hi": 2.6016295104403357
+      },
+      "prcp": {
+        "lo": 6.202352485684578,
+        "hi": 10.226549053157628
+      }
+    },
+    "USW00093819": {
+      "tavg": {
+        "lo": 1.4253267074910896,
+        "hi": 4.277906914949407
+      },
+      "prcp": {
+        "lo": 6.711201277771872,
+        "hi": 10.573545476213013
+      }
+    },
+    "USW00093817": {
+      "tavg": {
+        "lo": 3.233456555893642,
+        "hi": 5.679692217308932
+      },
+      "prcp": {
+        "lo": 7.480496971522331,
+        "hi": 10.543913116261708
+      }
+    }
+  },
+  "confirm_in_train": false,
+  "confirm_in_cuts": false,
+  "random_split": false,
+  "holdout_winters": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "train_last_winter": 2019,
+  "confirm_winter": 2026
+}

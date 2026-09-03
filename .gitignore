@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+data/raw/*.csv.gz
+data/raw/ghcnd-stations.txt
+data/raw/cpc/cpcllft.dat
+data/raw/cpc/cpcllfp.dat
+data/raw/cpc/cpcllftd.*.dat
+data/raw/cpc/cpcllfpd.*.dat
+data/interim/
+*.egg-info/

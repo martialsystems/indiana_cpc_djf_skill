@@ -1,0 +1,11 @@
+{
+  "engine": "graphforge",
+  "github": "martialsystems/graphforge",
+  "track": "main",
+  "remote": "origin",
+  "min_version": "0.6.0",
+  "policy": "report_only",
+  "local_candidates": ["~/graphforge"],
+  "require_product_laws": true,
+  "note": "CPC DJF skill: confirmation out of train and cuts; no live lead-4 URL; no Ridge/HGB; T and P not averaged; two-figure cap; empty-core stop; claim bans; no outlook hero rewrite. Verify-before-done is the finish gate."
+}
