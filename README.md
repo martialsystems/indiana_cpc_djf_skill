@@ -6,11 +6,11 @@ Yes on temperature; no on precipitation. Locked `a95a16b`. Holdout CPC temperatu
 
 Amount science `ac36f0f`, JJA miss `1416da1`, winter-lake miss `6b47f21`, DJF snow holdout `9aa7935`, and freeze-date `28941fb` stay frozen. The contestant is CPC. The bar is climatology.
 
-Parent: [![indiana_djf_snow_tercile](https://img.shields.io/badge/indiana__djf__snow__tercile-2e7d32?style=for-the-badge)](https://github.com/martialsystems/indiana_djf_snow_tercile)
+Parents: [![indiana_djf_snow_tercile](https://img.shields.io/badge/indiana__djf__snow__tercile-2e7d32?style=for-the-badge)](https://github.com/martialsystems/indiana_djf_snow_tercile)
 [![indiana_freeze_date](https://img.shields.io/badge/indiana__freeze__date-2e7d32?style=for-the-badge)](https://github.com/martialsystems/indiana_freeze_date)
 [![Temp writeup](https://img.shields.io/badge/Temp_writeup-2e7d32?style=for-the-badge)](https://gist.github.com/martialsystems/e5de316dbb5f672573906572730e3735)
 [![Precip writeup](https://img.shields.io/badge/Precip_writeup-2e7d32?style=for-the-badge)](https://gist.github.com/martialsystems/b5f900aad37487bb8c0206a321c1ed5c)
-[![Open the research console](https://img.shields.io/badge/Open_the_research_console-2e7d32?style=for-the-badge)](https://martialsystems.github.io/indiana_wx_pages/)
+
 
 Holdout n=24 station-winters per variable on the four cores (DJF 2019-20 through 2024-25). Train: DJF 1991-92 through 2018-19. Confirmation DJF 2025-26 is out of train and out of tercile cuts.
 
