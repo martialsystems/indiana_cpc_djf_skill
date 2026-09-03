@@ -33,6 +33,7 @@ def test_readme_opens_with_the_question() -> None:
     assert "\u2014" not in text
     assert "What it is not" not in text
     assert ".venv/bin/python -m pytest" in text
+    assert "`b819355`" in text
     assert "0.643" in text
     assert "0.809" in text
     assert "0.667" in text
