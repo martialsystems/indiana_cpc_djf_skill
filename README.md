@@ -2,7 +2,7 @@
 
 Do issued CPC DJF temperature and precipitation outlooks beat climatology at South Bend, Fort Wayne, Indianapolis, and Evansville?
 
-Yes on temperature; no on precipitation. Locked `b819355`. Holdout CPC temperature Brier is 0.643 against equal chance 0.667. Precipitation Brier is 0.809 against 0.667. That split is the product. Do not average it. North and south temperature both beat equal chance. Evansville precipitation Brier 0.495 stays in the station table; it is not a statewide precip win. Last year is the second bar (temperature Brier 1.25, precipitation 1.33). Confirmation DJF 2025-26 does not reverse the holdout. Fixture skill does not rescue live.
+Yes on temperature; no on precipitation. Locked `a95a16b`. Holdout CPC temperature Brier is 0.643 against equal chance 0.667. Precipitation Brier is 0.809 against 0.667. That split is the product. Do not average it. North and south temperature both beat equal chance. Evansville precipitation Brier 0.495 stays in the station table; it is not a statewide precip win. Last year is the second bar (temperature Brier 1.25, precipitation 1.33). Confirmation DJF 2025-26 does not reverse the holdout. Fixture skill does not rescue live.
 
 Amount science `ac36f0f`, JJA miss `1416da1`, winter-lake miss `6b47f21`, DJF snow holdout `9aa7935`, and freeze-date `28941fb` stay frozen. The contestant is CPC. The bar is climatology.
 
